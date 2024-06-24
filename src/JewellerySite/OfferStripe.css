@@ -1,0 +1,57 @@
+.offer-stripe {
+    background: rgb(240, 223, 223);
+   ;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    border: 1px solid #75694a;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 55px ;
+  }
+  
+  .offer-stripe::before,
+  .offer-stripe::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    
+  }
+  
+  .offer-stripe::before {
+    left: 0;
+  }
+  
+  .offer-stripe::after {
+    right: 0;
+  }
+  
+  .offer-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #234249;
+    text-shadow: 2px 2px #fff;
+    display: inline-block;
+    animation: textGlow 1.5s infinite;
+  }
+  
+  @keyframes textGlow {
+    0% {
+      text-shadow: 0 0 10px #fff;
+    }
+    50% {
+      text-shadow: 0 0 20px rgb(233, 233, 11);
+    }
+    100% {
+      text-shadow: 0 0 10px #fff;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .offer-text {
+      font-size: 20px;
+    }
+  }
+  
